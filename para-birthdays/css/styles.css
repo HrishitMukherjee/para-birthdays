@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body.light-mode {
+    background-color: #f0f0f0;
+    color: #111;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(0,0,0,0.85);
+    border-radius: 8px;
+}
+
+body.light-mode .container {
+    background: rgba(255,255,255,0.9);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+section {
+    margin: 20px 0;
+    padding: 15px;
+    background: #222;
+    border-radius: 6px;
+}
+
+body.light-mode section {
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#photoGrid img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin: 5px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}

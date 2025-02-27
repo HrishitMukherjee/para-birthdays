@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARA Birthdays</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎉 Welcome to PARA Birthdays 🎂</h1>
+            <button id="themeToggle">Toggle Light/Dark Mode</button>
+        </header>
+
+        <section id="countdownSection">
+            <h2>Next Birthday Countdown</h2>
+            <div id="countdown">Loading...</div>
+        </section>
+
+        <section id="birthdayList">
+            <h2>Birthday Calendar 🎂</h2>
+            <ul id="birthdayListUl"></ul>
+        </section>
+
+        <section id="cakeCounter">
+            <h2>Cake Counter 🍰</h2>
+            <p>Cakes Tapped: <span id="cakeCount">0</span></p>
+            <button id="addCake">🍰 Add Cake</button>
+        </section>
+
+        <section id="pollSection">
+            <h2>Birthday Poll 📊</h2>
+            <div id="pollOptions"></div>
+        </section>
+
+        <section id="gallery">
+            <h2>Photo Gallery 📸</h2>
+            <input type="file" id="photoUpload">
+            <div id="photoGrid"></div>
+        </section>
+
+        <footer>
+            <p>Made with ❤️ by PARA</p>
+        </footer>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-storage-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
